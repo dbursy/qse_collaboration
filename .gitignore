@@ -1,3 +1,9 @@
+# downloaded during problem set 1 
+vg2500/
+*.pdf
+aktualitaet.txt
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
