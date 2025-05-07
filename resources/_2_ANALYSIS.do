@@ -40,8 +40,12 @@ grc1leg name1 name0 name3, cols(3) leg(name3) xsize(10) ysize(5)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/	
 	
-	
-	
+/*	**Task 1 Discuss the GE effects of the height limit**
+- Vertical compression of CBD -> horizontal expansion to less productive locations -> lower productivity, lower agglomeration forces -> lower wages -> out migration -> residential district shrinks -> reinforces trend bc. agglomeration forces reduced
+- residential rents fall, wages decrease but reservation utility is fixed, so this needs to be offset by reduced rents to maintain city inhabitants
+- Commercial rents unclear bc. reduction of vertical space but lower competition for space due to less residents
+
+	*/
 	
 	
 	
@@ -65,6 +69,27 @@ grc1leg name1 name0 name3, cols(3) leg(name3) xsize(10) ysize(5)
 *** Notice how the height limit not only affects building heights, but also the level	
 *** of price gradients, the land bid rents, the horizontal land use pattern and, 
 *** importantly, city size and wage
+
+
+
+/*
+
+-  amenity decay parameter
+	- increase in tau_c makes height limit more stingent
+	- bid rents and floor space rents increase, city shrinks
+
+
+- heigh elasticity of construction costs
+	- if increased possible that limit no longer binding, city shrinks nonetheless, simply bc of this parameter
+	- reduced drives up land bit rents and city increases
+
+- agglomeration elasticity
+	- algo does not converge, likely bc. target population not matched? 
+	- But I would expect the strongest interaction here
+
+
+*/
+
 
 
 
