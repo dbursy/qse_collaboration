@@ -170,11 +170,9 @@ data/*
 !data/.gitkeep 
 
 # Resources
-resources/*
-!resources/.gitkeep 
-!resources/AB2022-toolkit/
-!resources/AB2022-toolkit/STATA_WALKTHROUGH/
-!resources/AB2022-toolkit/STATA_WALKTHROUGH/_02_ANALYSIS.do
+resources/AHS2023-toolkit-main
+
+
 
 # DS_Store
 DS_Store
