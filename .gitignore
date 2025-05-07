@@ -172,6 +172,9 @@ data/*
 # Resources
 resources/*
 !resources/.gitkeep 
+!resources/AB2022-toolkit/
+!resources/AB2022-toolkit/STATA_WALKTHROUGH/
+!resources/AB2022-toolkit/STATA_WALKTHROUGH/_02_ANALYSIS.do
 
 # DS_Store
 DS_Store
