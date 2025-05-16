@@ -11,9 +11,9 @@ while obj_lab > 0.01
 
     % This I would just do bc. stata also does it, from my Understanding can
     % delete this
-    % [BASE,L_hat_demand,L_hat_supply, sL, sy, x0, x1] = SOLVER(BASE, params);
+    [BASE,L_hat_demand,L_hat_supply, sL, sy, x0, x1] = SOLVER(BASE, params);
 
-    [BASE,L_hat_demand, L_hat_supply, sL, sy, x0, x1, iter_cnt] = WAGE(BASE, params);
+    [BASE,L_hat_demand, L_hat_supply, sL, sy, x0, x1, iter_cnt] =    WAGE(BASE, params);
 
 
     % City Sanity check 
@@ -23,7 +23,7 @@ while obj_lab > 0.01
     
     % Update the objective function
     obj_lab = abs( (sL ./ (0.5 .* (L_hat_supply + L_hat_demand))) -1); 
-
+    fprintf('Current objective value (FINDEQ) is %.6f\n', obj_lab);
     % Update guess of total employment with average of old guess and
     % updated demand and supply from model 
     BASE.L = 0.5 .* BASE.L + 0.5*0.5 .* (L_hat_supply + L_hat_demand);

@@ -17,7 +17,7 @@ if iter_cnt == 0 && obj_int < 1e-6 % 1e-6 is basically 0, used bc. of floating p
     obj_int = tolerance + 0.2;
 end 
 
-while obj_int > tolerance
+while (obj_int > tolerance) & iter_cnt < 100
     % Find wage adjust factor 
     if L_hat_supply == 0.0000 
         y_factor = 1.2; % No demand -> wage up 20%
@@ -37,7 +37,8 @@ while obj_int > tolerance
     [BASE,L_hat_demand,L_hat_supply, sL, sy, x0, x1] = SOLVER(BASE, params);
     
     % Print the value of the objective function for this run
-    disp(obj_int);
+    % disp(obj_int);
+    fprintf('Current objective value (WAGE) is %.6f\n', obj_int);
     % Update objective function
     obj_int = abs((L_hat_demand + 0.0001) / (L_hat_supply + 0.0001) - 1);
 
