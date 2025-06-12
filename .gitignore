@@ -172,7 +172,8 @@ data/*
 # Resources
 resources/AHS2023-toolkit-main
 
-
+experiments/input/*
+experiments/output/*
 
 # DS_Store
 DS_Store
